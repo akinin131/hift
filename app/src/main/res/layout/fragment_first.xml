@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        android:paddingBottom="30dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:text="SCHEME / NETWORK" />
+                <TextView
+                    android:id="@+id/textview_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="TYPE"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textview_first13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="BRAND"
+
+                    />
+                <TextView
+                    android:id="@+id/textview_two13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="PREPAID"
+
+                    />
+                <TextView
+                    android:id="@+id/textview_three14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="CARD NUMBER"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textview_three15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="COUNTRY"
+
+                    />
+                <TextView
+                    android:id="@+id/textview_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="BANK"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/scheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="50dp"
+                    />
+
+                <TextView
+                    android:id="@+id/brand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="50dp"
+                    />
+                <TextView
+                    android:id="@+id/prepaid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/green"
+                    android:text="1"
+
+                    />
+                <TextView
+                    android:id="@+id/card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/green"
+                    android:paddingTop="10dp"
+                    android:text="card_numbe1"
+                    />
+                <TextView
+                    android:id="@+id/card_number_luhn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="50dp"
+
+                    android:text="card_numbe1"
+                    />
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:text="3"
+                    />
+
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:text="1"
+                    />
+                <TextView
+                    android:id="@+id/bank_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/green"
+                    android:text="1"
+                    />
+                <TextView
+                    android:id="@+id/bank_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/green"
+                    android:text="1"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_marginEnd="7dp"
+            android:inputType="textPersonName"
+            android:hint="BIN" />
+
+        <Button
+            android:id="@+id/buttonBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Получить данные" />
+    </LinearLayout>
+
+
+</RelativeLayout>
