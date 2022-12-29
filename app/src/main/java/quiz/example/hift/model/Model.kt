@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 
 
+
 @Entity(tableName = "hift_table")
 class Model (
     @PrimaryKey(autoGenerate = true)
