@@ -6,11 +6,10 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 
 
-
 @Entity(tableName = "hift_table")
-class Model (
+class Model(
     @PrimaryKey(autoGenerate = true)
-    var id: Int=0,
+    var id: Int = 0,
     @ColumnInfo
     var Sсheme: String = "",
     @ColumnInfo
@@ -30,6 +29,6 @@ class Model (
     @ColumnInfo
     var cardNumber: String = "",
     @ColumnInfo
-    var cardNumberLuhn: String = ""
+    var cardNumberLuhn: String = "",
 
-        ) : Serializable
+    ) : Serializable

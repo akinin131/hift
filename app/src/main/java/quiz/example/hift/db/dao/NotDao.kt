@@ -12,8 +12,8 @@ interface NotDao {
     fun insert(noteModel: Model)
 
     @Delete
-     fun delete(noteModel: Model)
+    fun delete(noteModel: Model)
 
-    @Query ("SELECT *from hift_table")
-    fun getAllNotes():LiveData<List<Model>>
+    @Query("SELECT *from hift_table")
+    fun getAllNotes(): LiveData<List<Model>>
 }

@@ -5,7 +5,7 @@ import quiz.example.weather.db.dao.NotDao
 import quiz.example.weather.model.Model
 
 
-class NoteRelis(private val noteDao: NotDao):NoteRepository{
+class Relis(private val noteDao: NotDao) : Repository {
     override val AllNotes: LiveData<List<Model>>
         get() = noteDao.getAllNotes()
 
@@ -18,4 +18,5 @@ class NoteRelis(private val noteDao: NotDao):NoteRepository{
         noteDao.delete(noteModel)
         onSuccess()
     }
+
 }

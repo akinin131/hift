@@ -7,25 +7,23 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import quiz.example.hift.APP
-import quiz.example.hift.FirstFragment
 import quiz.example.hift.R
 import quiz.example.hift.SecondFragment
-import quiz.example.hift.SecondFragment.Companion.clickNote
 import quiz.example.hift.databinding.ItemLayoutBinding
 
 import quiz.example.weather.model.Model
 
 import java.util.Collections.emptyList
 
-class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
+class Adapter : RecyclerView.Adapter<Adapter.NoteViewHolder>() {
 
 
     var ListNote = emptyList<Model>()
 
-    class NoteViewHolder (view:View):RecyclerView.ViewHolder(view){
+    class NoteViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = ItemLayoutBinding.bind(view)
         fun bind(bin: Model) {
-            binding.apply{
+            binding.apply {
 
                 binding.bankPhone.text = bin.bankPhone
                 binding.bank.text = bin.bank
@@ -43,14 +41,14 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
         return NoteViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        holder.bind(ListNote [position])
-        holder.itemView.setOnClickListener{
-            Toast.makeText(APP, ""+position,Toast.LENGTH_LONG).show()
+        holder.bind(ListNote[position])
+        holder.itemView.setOnClickListener {
+            Toast.makeText(APP, "" + position, Toast.LENGTH_LONG).show()
         }
     }
 
