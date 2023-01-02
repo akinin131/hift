@@ -31,9 +31,6 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navControllerTwo = Navigation.findNavController(this,R.id.nav_host_fragment_content_main)
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-
             APP.navControllerTwo.navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }

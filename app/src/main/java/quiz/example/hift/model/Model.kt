@@ -5,8 +5,6 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
-
-
 @Entity(tableName = "hift_table")
 class Model (
     @PrimaryKey(autoGenerate = true)
@@ -25,6 +23,8 @@ class Model (
     var bankPhone: String = "",
     @ColumnInfo
     var bank: String = "",
+    @ColumnInfo
+    var bankCity: String = "",
     @ColumnInfo
     var country: String = "",
     @ColumnInfo

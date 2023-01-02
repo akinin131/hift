@@ -81,6 +81,7 @@ class FirstFragment : Fragment() {
                     var bankPhone: String = " "
                     var cardNumberLengt: String = " "
                     var cardNumberluhn: String = " "
+                    var bankCity: String = " "
                     try {
                         scheme = `object`.getString("scheme")
                     } catch (e: Exception) {
@@ -119,6 +120,11 @@ class FirstFragment : Fragment() {
                     }
                     try {
                         val bank = obg.getJSONObject("bank")
+                        bankCity = bank.getString("city")
+                    } catch (e: Exception) {
+                    }
+                    try {
+                        val bank = obg.getJSONObject("bank")
                         bankurl = bank.getString("url")
                     } catch (e: Exception) {
                     }
@@ -138,15 +144,13 @@ class FirstFragment : Fragment() {
                     } catch (e: Exception) {
                     }
 
-
-
-
                     bunding.scheme.text = scheme
                     bunding.type.text = type
                     bunding.brand.text = brand
                     bunding.prepaid.text = prepaid
                     bunding.bank.text = bankName
                     bunding.bankUrl.text = bankurl
+                    bunding.bankCity.text= bankCity
                     bunding.bankPhone.text = bankPhone
                     bunding.country.text = country
                     bunding.cardNumber.text = cardNumberLengt
@@ -159,7 +163,6 @@ class FirstFragment : Fragment() {
                     Log.d("MyLog", "Response: $bankurl")
                     Log.d("MyLog", "Response: $obg")
 
-
                     init(
                         scheme,
                         type,
@@ -168,6 +171,7 @@ class FirstFragment : Fragment() {
                         bankName,
                         bankurl,
                         bankPhone,
+                        bankCity,
                         country,
                         cardNumberLengt,
                         cardNumberluhn
@@ -220,6 +224,10 @@ class FirstFragment : Fragment() {
 
     }
 
+
+
+
+
     private fun init(
         scheme: String,
         type: String,
@@ -228,6 +236,7 @@ class FirstFragment : Fragment() {
         bankUrl: String,
         bankPhone: String,
         bank: String,
+        bankCity: String,
         country: String,
         cardNumber: String,
         ardNumberLuhn: String,
@@ -244,6 +253,7 @@ class FirstFragment : Fragment() {
                 bankUrl = bankUrl,
                 bankPhone = bankPhone,
                 bank = bank,
+                bankCity=bankCity,
                 country = country,
                 cardNumber = cardNumber,
                 cardNumberLuhn = ardNumberLuhn

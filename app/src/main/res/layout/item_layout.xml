@@ -163,6 +163,13 @@
                 android:text="1"
                 />
             <TextView
+                android:id="@+id/bank_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text=""
+                android:textColor="@color/green" />
+            <TextView
                 android:id="@+id/bank_url"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

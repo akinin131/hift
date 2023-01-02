@@ -27,6 +27,7 @@ class Adapter : RecyclerView.Adapter<Adapter.NoteViewHolder>() {
 
                 binding.bankPhone.text = bin.bankPhone
                 binding.bank.text = bin.bank
+                binding.bankCity.text = bin.bankCity
                 binding.type.text = bin.type
                 binding.bankUrl.text = bin.bankUrl
                 binding.brand.text = bin.brand

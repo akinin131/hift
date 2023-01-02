@@ -6,12 +6,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+
 import quiz.example.weather.db.dao.NotDao
 import quiz.example.weather.model.Model
 
 
-
-@Database(entities = [Model::class],version = 1)
+@Database(entities = [Model::class],version = 2)
 abstract class DataBase: RoomDatabase() {
     abstract fun getNotDao(): NotDao
 
@@ -29,6 +29,8 @@ abstract class DataBase: RoomDatabase() {
                database as DataBase
            }
        }
+
+
     }
 }
 
