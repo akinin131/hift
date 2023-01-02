@@ -153,7 +153,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
-                    android:textColor="@color/green"
+                    android:textColor="@color/purple_700"
                     android:layout_marginTop="10dp"
                     android:text=""
                     />
@@ -172,7 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
-                    android:textColor="@color/green"
+                    android:textColor="@color/purple_700"
                     android:text=""
                     />
                 <TextView
@@ -180,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
-                    android:textColor="@color/green"
+                    android:textColor="@color/purple_700"
                     android:text=""
                     />
             </LinearLayout>
