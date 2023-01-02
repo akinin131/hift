@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import quiz.example.hift.databinding.FragmentSecondBinding
-import quiz.example.weather.adapter.NoteAdapter
+import quiz.example.weather.adapter.Adapter
 import quiz.example.weather.model.Model
 
 /**
@@ -19,7 +18,7 @@ class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
     lateinit var recyclerView: RecyclerView
-    lateinit var adapter: NoteAdapter
+    lateinit var adapter: Adapter
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -43,7 +42,7 @@ class SecondFragment : Fragment() {
         var viewModel = ViewModelProvider(this).get(StartViewModel::class.java)
         viewModel.initDataBase()
         recyclerView = binding.rvNotes
-        adapter = NoteAdapter()
+        adapter = Adapter()
         recyclerView.adapter = adapter
         viewModel.getAllNotes().observe(viewLifecycleOwner) { listNotes ->
 

@@ -12,21 +12,21 @@ import quiz.example.weather.model.Model
 
 
 @Database(entities = [Model::class],version = 1)
-abstract class NotDataBase: RoomDatabase() {
+abstract class DataBase: RoomDatabase() {
     abstract fun getNotDao(): NotDao
 
     companion object {
-        private var database: NotDataBase? = null
+        private var database: DataBase? = null
 
 
        @Synchronized
-       fun getInstance(context:Context):NotDataBase{
+       fun getInstance(context:Context):DataBase{
 
            return if(database==null){
-               database = Room.databaseBuilder(context,NotDataBase::class.java,"db").build()
-               database as NotDataBase
+               database = Room.databaseBuilder(context,DataBase::class.java,"db").build()
+               database as DataBase
            }else{
-               database as NotDataBase
+               database as DataBase
            }
        }
     }

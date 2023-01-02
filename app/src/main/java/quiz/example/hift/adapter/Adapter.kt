@@ -7,17 +7,15 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import quiz.example.hift.APP
-import quiz.example.hift.FirstFragment
 import quiz.example.hift.R
 import quiz.example.hift.SecondFragment
-import quiz.example.hift.SecondFragment.Companion.clickNote
 import quiz.example.hift.databinding.ItemLayoutBinding
 
 import quiz.example.weather.model.Model
 
 import java.util.Collections.emptyList
 
-class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
+class Adapter : RecyclerView.Adapter<Adapter.NoteViewHolder>() {
 
 
     var ListNote = emptyList<Model>()

@@ -96,7 +96,7 @@
                     android:id="@+id/scheme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1"
+                    android:text=" "
                     android:layout_marginTop="10dp"
                     android:textColor="@color/green"
                     android:layout_marginLeft="50dp"
@@ -105,7 +105,7 @@
                     android:id="@+id/type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
+                    android:text=" "
                     android:layout_marginTop="10dp"
                     android:textColor="@color/green"
                     android:layout_marginLeft="50dp"
@@ -115,7 +115,7 @@
                     android:id="@+id/brand"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3"
+                    android:text=""
                     android:layout_marginTop="10dp"
                     android:textColor="@color/green"
                     android:layout_marginLeft="50dp"
@@ -127,7 +127,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="10dp"
                     android:textColor="@color/green"
-                    android:text="1"
+                    android:text=""
 
                     />
                 <TextView
@@ -137,7 +137,7 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@color/green"
                     android:paddingTop="10dp"
-                    android:text="card_numbe1"
+                    android:text=""
                     />
                 <TextView
                     android:id="@+id/card_number_luhn"
@@ -146,7 +146,7 @@
                     android:textColor="@color/green"
                     android:layout_marginLeft="50dp"
 
-                    android:text="card_numbe1"
+                    android:text=""
                     />
                 <TextView
                     android:id="@+id/country"
@@ -155,7 +155,7 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@color/green"
                     android:layout_marginTop="10dp"
-                    android:text="3"
+                    android:text=""
                     />
 
                 <TextView
@@ -165,7 +165,7 @@
                     android:layout_marginLeft="50dp"
                     android:textColor="@color/green"
                     android:layout_marginTop="10dp"
-                    android:text="1"
+                    android:text=""
                     />
                 <TextView
                     android:id="@+id/bank_url"
@@ -173,7 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:textColor="@color/green"
-                    android:text="1"
+                    android:text=""
                     />
                 <TextView
                     android:id="@+id/bank_phone"
@@ -181,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:textColor="@color/green"
-                    android:text="1"
+                    android:text=""
                     />
             </LinearLayout>
 
